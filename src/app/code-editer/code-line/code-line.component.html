@@ -1,0 +1,22 @@
+<svg:g class="noselect" (mouseup)="showSelectedText()">
+  <svg:text class=“noselect” [attr.x]="10" [attr.y]="32*(1+lineNum)" style="fill:rgb(213, 220, 230);"
+    οncοntextmenu='return false' οndragstart='return false' onselectstart='return false'
+    οnselect='document.selection.empty()' οncοpy='document.selection.empty()' onbeforecopy='return false'
+    οnmοuseup='document.selection.empty()'>
+    {{lineNum}}
+  </svg:text>
+</svg:g>
+
+<svg:g>
+  <svg:text [attr.x]="50" [attr.y]="32*(1+lineNum)" style="fill:rgb(213, 220, 230);" #code>
+    <!-- <svg:tspan *ngFor="let ch of lineCode.code;index as i"  [textContent]="ch" [attr.x]="80+i*15" [attr.y]="32*(0+lineCode.lineNum)"> </svg:tspan> -->
+    <svg:tspan>1 {{lineCode.code}}</svg:tspan>
+    <svg:tspan>2 {{lineCode.code}}</svg:tspan>
+    <svg:tspan>{{lineCode.code}}</svg:tspan>
+    <svg:tspan>{{lineCode.code}}</svg:tspan>
+    <svg:tspan>{{lineCode.code}}</svg:tspan>
+    <svg:tspan>{{lineCode.code}}</svg:tspan>
+    <svg:tspan>{{lineCode.code}}</svg:tspan>
+  </svg:text>
+</svg:g>
+

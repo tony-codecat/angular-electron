@@ -90,5 +90,9 @@
   },
   "engines": {
     "node": ">=10.13.0"
+  },
+  "dependencies": {
+    "@svgdotjs/svg.js": "^3.0.16",
+    "d3": "^5.15.1"
   }
 }

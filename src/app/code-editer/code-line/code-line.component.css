@@ -1,0 +1,4 @@
+.noselect {
+  /* pointer-events: none; */
+  cursor: default;
+}
